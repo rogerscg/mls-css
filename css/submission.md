@@ -1,0 +1,3 @@
+Is your post a request for help or information? Please read our FAQs and MLS Newcomer's Guide. If it's an original question, please use the most recent Free Kick Friday thread.
+All posts must adhere to the core rules of /r/MLS. Posts that violate these rules, the spirit of the rules, are repetitive, or are already covered in the FAQ/Newcomer's Guide will be removed.
+Posting content you wrote, or from a site you're involved with? Make sure to follow our simple self-linking policies when submitting.
