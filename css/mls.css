@@ -118,10 +118,12 @@ div#RESShortcutsViewport {
 }
 
 #header {
-  background: url(%%banner%%);
+  background: #c33134;
   height: 180px;
   position: relative;
-  width: 100%
+  width: 100%;
+  box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.6);
+  border-bottom: none;
 }
 
 #header-bottom-left {
@@ -130,10 +132,7 @@ div#RESShortcutsViewport {
 }
 
 #header-img {
-  max-width: 600px;
-  max-height: 159px;
-  width: auto;
-  height: auto
+  display: none!important;
 }
 
 #header-img-a {
@@ -204,21 +203,18 @@ div#RESShortcutsViewport {
 }
 
 .pagename {
-  display: block!important;
-  position: absolute;
-  top: 22px;
-  left: 430px;
-  font-size: 0px
+  font-size: 0px;
 }
 
 .pagename a {
-  display: block!important;
+  display: block;
   text-indent: -99999px;
-  background: url(%%reddit-mls%%) no-repeat;
-  margin: 12px auto 0 auto;
-  width: 245px;
-  height: 76px;
-  opacity: 1!important
+  background: url(%%mls-logo%%) no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
 }
 
 #header-bottom-right {
@@ -488,8 +484,14 @@ body div.side .spacer #search input[type="text"] {
 }
 
 .side .titlebox .md p:first-of-type {
-  margin: 0;
-  height: 0
+  font-size: 0px;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.6)
 }
 
 .sitetable .thumbnail {
@@ -1013,22 +1015,17 @@ a.title[href*="ccl_match_thread"]:before {
 .titlebox .md a[href="/r/NYCFC"],
 .titlebox .md a[href="/r/AtlantaUnited"],
 .titlebox .md a[href="/r/minnesotaunited"] {
-  position: absolute;
-  z-index: 100;
-  top: 115px;
-  right: 2px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
+  display: inline-block;
+  height: 60px;
+  background-color: white;
   background-repeat: no-repeat;
   background-image: url(%%mls-crest-sprite%%);
   background-position: -9999px -9999px;
-  vertical-align: middle;
-  margin-right: 3px;
-  border: none
+  flex-grow: 1;
+  border-left: 1px solid #cfcfcf;
 }
 
-.titlebox .md a[href="/r/AtlantaUnited"] {
+/*.titlebox .md a[href="/r/AtlantaUnited"] {
   background-position: -800px 0;
   right: 627px
 }
@@ -1136,7 +1133,7 @@ a.title[href*="ccl_match_thread"]:before {
 .titlebox .md a[href="/r/whitecapsfc"] {
   background-position: -720px 0;
   right: 3px
-}
+}*/
 
 .titlebox .md a[href="/r/chicagofire"]:hover:after,
 .titlebox .md a[href="/r/Rapids"]:hover:after,
@@ -1175,7 +1172,7 @@ a.title[href*="ccl_match_thread"]:before {
   -moz-box-shadow: 0 0 5px #000
 }
 
-.titlebox .md a[href="/r/chicagofire"]:hover:after {
+/*.titlebox .md a[href="/r/chicagofire"]:hover:after {
   background: -webkit-linear-gradient(#CD003F, #74001E);
   background: -moz-linear-gradient(#CD003F, #74001E);
   color: #FFF;
@@ -1371,7 +1368,7 @@ a.title[href*="ccl_match_thread"]:before {
   text-shadow: 0 -1px #000;
   -webkit-text-shadow: 0 -1px #000;
   -moz-text-shadow: 0 -1px #000
-}
+}*/
 
 .md table {
   border: 2px solid #fff;
